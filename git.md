@@ -11,8 +11,10 @@
 $ docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone git@github.com:pnparadise/gitbook.git
 ```
 
+### docker gitbook cmd
 ```
-docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook build
+$ docker run --rm -v "$PWD:/gitbook" billryan/gitbook gitbook install
+$ docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook build
 ```
 
 > https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
