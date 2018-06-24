@@ -7,6 +7,7 @@
 * [git](git.md)
 * [win10](windows.md)
 * [vps](vps.md)
+* [nginx](nginx.md)
 
 ## Methods
 
