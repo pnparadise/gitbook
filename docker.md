@@ -33,6 +33,14 @@ $ sudo yum install -y docker-ce
 $ sudo systemctl start docker
 ```
 
+### docker container 时区修改
+
+```
+$ docker exec -it [container:name] bash
+$ echo "Asia/Shanghai" > /etc/timezone
+$ dpkg-reconfigure -f noninteractive tzdata
+```
+
 ### docker nginx
 
 ```
