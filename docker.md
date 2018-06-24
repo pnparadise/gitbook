@@ -36,7 +36,7 @@ $ sudo systemctl start docker
 ### docker nginx
 
 ```
-$ docker run -d --name nginx \
+$ docker run -d --net nat --ip 172.168.0.3 --name nginx \
     -v /conf/nginx/nginx.conf:/etc/nginx/nginx.conf \
     -v /conf/nginx/conf.d:/etc/nginx/conf.d --restart always -p 80:80 -p 443:443 nginx
 ```
