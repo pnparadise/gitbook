@@ -2,10 +2,10 @@
 
 ## Overview
 
-* [ssh](README.md)
+* [shell](README.md)
 * [docker](docker.md)
 * [git](git.md)
-* [windows](windows.md)
+* [win10](windows.md)
 
 ## Methods
 

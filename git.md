@@ -5,6 +5,10 @@
 > chmod 700 id_rsa
 > ssh-add id_rsa
 
+### docker git clone
+```
+$ docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone git@github.com:pnparadise/gitbook.git
+```
 
 ### git base
 
