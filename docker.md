@@ -13,7 +13,7 @@ sudo yum remove docker \
     docker-engine
 ```
 
-```
+```bash
 sudo yum install -y yum-utils \
     device-mapper-persistent-data \
     lvm2
