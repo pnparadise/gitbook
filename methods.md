@@ -1,4 +1,5 @@
 ### docker centos install
+
 ```
 sudo yum remove docker \
     docker-client \
@@ -47,12 +48,14 @@ docker run --net nat --ip 172.168.0.2 -u root \
     -v /data/wwwroot:/data/wwwroot -w /data/wwwroot --restart always \
     --name app -d -p 8080:8080 gradle gradle bootRun
 ```
+
 ### docker shadowsocksr
 
 ```
-    docker run -d -p 443:51348 --restart=always -e PASSWORD=breakwall \
+docker run -d -p 443:51348 --restart=always -e PASSWORD=breakwall \
         -e METHOD=aes-256-cfb -e PROTOCOL=auth_sha1_v4 -e OBFS=tls1.2_ticket_auth \
         --name shadowsocksr breakwa11/shadowsocksr
 ```
+
 
 

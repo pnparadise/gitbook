@@ -1,4 +1,10 @@
 
+### add id_rsa
+
+> eval $(ssh-agent -s)
+> chmod 700 id_rsa
+> ssh-add id_rsa
+
 
 ### git base
 
