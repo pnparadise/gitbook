@@ -65,5 +65,11 @@ $ docker run -d -p 443:51348 --restart=always -e PASSWORD=breakwall \
     --name shadowsocksr breakwa11/shadowsocksr
 ```
 
+### docker redis
+
+```
+$ docker run -d -p 6379:6379 -v /etc/redis:/usr/local/redis/conf
+```
+
 
 
