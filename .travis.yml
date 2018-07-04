@@ -28,7 +28,7 @@ after_success:
 - ssh-add id_rsa
 - git fetch --unshallow
 - git checkout -b built
-- git add .
+- git add -A
 - git commit -m 'built version'
 - git remote add deploy ssh://root@wiki.sudoso.com:29029/root/gitbook.git
 - git push deploy built --force
