@@ -7,9 +7,6 @@ branches:
     
 services:
   - docker
-  
-before_script:
-  - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_26b4962af0e7_key -iv $encrypted_26b4962af0e7_iv -in id_rsa.enc -out id_rsa -d
@@ -19,6 +16,11 @@ before_install:
 install:
   - docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook install
   - docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook build
+  
+before_script:
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+
+script: true
 
 after_success:
 - eval "$(ssh-agent -s)"
