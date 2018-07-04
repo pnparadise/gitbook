@@ -8,6 +8,7 @@
 * [win10](windows.md)
 * [vps](vps.md)
 * [nginx](nginx.md)
+* [travis](travis.md)
 
 ## Account
 

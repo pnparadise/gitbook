@@ -4,5 +4,5 @@
 
 `proxy_set_header Host $host;`
 
-`proxy_pass   `[`http://47.104.222.160:8080`](http://47.104.222.160:8080)`;`
+`proxy_pass`[`http://47.104.222.160:80`](http://47.104.222.160:8080)
 
