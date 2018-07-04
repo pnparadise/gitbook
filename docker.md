@@ -1,4 +1,6 @@
-    ### docker centos install
+```
+### docker centos install
+```
 
 ```
 $ sudo yum remove docker \
@@ -44,12 +46,12 @@ $ dpkg-reconfigure -f noninteractive tzdata
 ### docker nginx
 
 ```
-$ docker run -d --net nat --ip 172.168.0.3 --name nginx \
+$ docker run -d --name nginx \
     -v /conf/nginx/nginx.conf:/etc/nginx/nginx.conf \
     -v /conf/nginx/conf.d:/etc/nginx/conf.d --restart always -p 80:80 -p 443:443 nginx
 ```
 
-配置文件[https://github.com/nginxinc/docker-nginx/tree/master/stable/alpine]
+配置文件\[[https://github.com/nginxinc/docker-nginx/tree/master/stable/alpine](https://github.com/nginxinc/docker-nginx/tree/master/stable/alpine)\]
 
 ### docker gradle & spring boot
 
