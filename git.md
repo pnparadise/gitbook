@@ -1,6 +1,7 @@
 
 ### add id_rsa 
 
+mv id_rsa ~/.ssh
 > eval $(ssh-agent -s)
 > chmod 700 id_rsa
 > ssh-add id_rsa
