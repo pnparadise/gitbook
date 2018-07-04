@@ -1,5 +1,7 @@
+### docker-ce centos install
+
 ```
-### docker centos install
+$ docker centos install
 ```
 
 ```
@@ -74,6 +76,10 @@ $ docker run -d -p 443:51348 --restart=always -e PASSWORD=breakwall \
 ```
 $ docker run -d -p 6379:6379 -v /etc/redis:/usr/local/redis/conf
 ```
+
+
+
+
 
 
 
