@@ -18,9 +18,7 @@ public <S extends ExpiringSession> SessionRepositoryFilter<? extends ExpiringSes
 
 [https://stackoverflow.com/questions/33095345/how-to-change-spring-session-redis-cookie-name](https://stackoverflow.com/questions/33095345/how-to-change-spring-session-redis-cookie-name)
 
-
-
-### spring boot global DateTimeFormat 
+### spring boot global DateTimeFormat
 
 > 修复@DateTimeFormat注解失效问题
 
@@ -31,8 +29,6 @@ public <S extends ExpiringSession> SessionRepositoryFilter<? extends ExpiringSes
         FormattingConversionService conversionService = new WebConversionService("yyyy-MM-dd");//gobal without @DateTimeFormat
         new DateFormatterRegistrar().registerFormatters(conversionService); //annotation supported
         //we can add our custom converters and formatters
-        conversionService.addConverter(new EnumConverter<>(TradeType.class));
-        conversionService.addConverter(new EnumConverter<>(TradePlatform.class));
         //conversionService.addFormatter(...);
         initializer.setConversionService(conversionService);
         //we can set our custom validator
@@ -46,6 +42,37 @@ public <S extends ExpiringSession> SessionRepositoryFilter<? extends ExpiringSes
         });*/
         return initializer;
     }
+```
+
+### 
+
+### spring global string to enum converter factory  自动转化枚举类型作为参数
+
+```
+public class StringToEnumConverterFactory implements ConverterFactory<String, Enum> {
+
+    @Override
+    public <T extends Enum> Converter<String, T> getConverter(Class<T> targetType) {
+        return new StringToEnumConverter<>(targetType);
+    }
+
+    private final class StringToEnumConverter<T extends Enum> implements Converter<String, T> {
+
+        private Class<T> enumType;
+
+        StringToEnumConverter(Class<T> enumType) {
+            this.enumType = enumType;
+        }
+
+        public T convert(String source) {
+            return (T) Enum.valueOf(this.enumType, source.trim());
+        }
+    }
+}
+```
+
+```
+ conversionService.addConverterFactory(new StringToEnumConverterFactory());
 ```
 
 
