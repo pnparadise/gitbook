@@ -5,6 +5,13 @@
 > chmod 700 id\_rsa  
 > ssh-add id\_rsa
 
+### git 强制更新
+
+```
+$ git fetch --all
+$ git reset --hard origin/master
+```
+
 ### docker git clone
 
 ```
@@ -34,12 +41,6 @@ $ docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook build
 ### git 命令提交 推送
 
 > [http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/](http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/)
-
-
-
-
-
-
 
 
 
