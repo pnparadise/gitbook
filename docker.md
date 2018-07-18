@@ -41,7 +41,7 @@ $ sudo systemctl start docker
 
 ```
 $ docker exec -it [container:name] bash
-$ echo "Asia/Shanghai" > /etc/timezone
+$ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 $ dpkg-reconfigure -f noninteractive tzdata
 ```
 
@@ -76,10 +76,6 @@ $ docker run -d -p 443:51348 --restart=always -e PASSWORD=breakwall \
 ```
 $ docker run -it --link redis:redis --rm redis redis-cli -h redis -p 6379
 ```
-
-
-
-
 
 
 
