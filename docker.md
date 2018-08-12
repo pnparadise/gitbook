@@ -66,8 +66,8 @@ $ docker run --net nat --ip 172.168.0.2 -u root \
 ### docker mysql
 
 ```
-$ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -v /data/mysql:/var/lib/mysql -d mysql:5.7 \
-    --net nat --ip 172.168.0.33 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -v /data/mysql:/var/lib/mysql --net nat --ip 172.168.0.33  \
+    -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
 
 ### docker redis
