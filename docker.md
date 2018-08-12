@@ -58,9 +58,10 @@ $ docker run -d --name nginx \
 ### docker gradle & spring boot
 
 ```
-$ docker run --net nat --ip 172.168.0.2 -u root \
-    -v /data/wwwroot:/data/wwwroot -w /data/wwwroot --restart always \
-    --name app -d -p 8080:8080 gradle gradle bootRun
+$ docker run --net nat --ip 172.168.0.88 -u root --add-host=mysql.texustek.com:172.168.0.33 \
+    --add-host=redis.texustek.com:172.168.0.79 \
+    -v /data/wwwroot/m.texustek.com:/data/wwwroot -w /data/wwwroot --restart always \
+    --name app-prod -d -p 8888:8888 gradle gradle bootRun -PjvmArgs="spring.profiles.active=prod"
 ```
 
 ### docker mysql
