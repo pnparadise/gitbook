@@ -70,6 +70,12 @@ $ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -v /data/mysql:/var/lib/my
     --net nat --ip 172.168.0.33 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 ```
 
+### docker redis
+
+```
+docker run --name redis -d --net nat --ip 172.168.0.79 -v /data/redis:/data redis redis-server --appendonly yes
+```
+
 ### docker shadowsocksr
 
 ```
