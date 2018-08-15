@@ -67,8 +67,9 @@ $ docker run --net nat --ip 172.168.0.88 -u root --add-host=mysql.texustek.com:1
 ### docker mysql
 
 ```
-$ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -v /data/mysql:/var/lib/mysql --net nat --ip 172.168.0.33  \
-    -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+$ docker run --name mysql -e MYSQL_ROOT_PASSWORD=root -v /data/mysql:/var/lib/mysql -v /conf/mysql:/etc/mysql/conf.d \
+    -p 3306:3306 --net nat --ip 172.168.0.33 -d mysql:5.7 --character-set-server=utf8mb4 \
+    --collation-server=utf8mb4_unicode_ci
 ```
 
 ### docker redis
