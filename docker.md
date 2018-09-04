@@ -37,12 +37,20 @@ $ sudo yum install -y docker-ce
 $ sudo systemctl start docker
 ```
 
-### docker container 时区修改
+### docker container 时区修改 无法修改openjdk springboot 获取的时区
 
 ```
 $ docker exec -it [container:name] bash
 $ cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 $ dpkg-reconfigure -f noninteractive tzdata
+```
+
+### from openjdk docker  修改时区
+
+```
+docker run -e TZ=Asia/ShangHai
+
+RUN echo "Asia/ShangHai" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 ```
 
 ### docker nginx
