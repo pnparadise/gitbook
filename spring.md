@@ -1,3 +1,20 @@
+## springboot build.gradle with profile  {#session}
+
+```
+$ bootRun -Dspring.profile.active=dev
+
+
+//build.gradle
+bootRun {
+	systemProperties = System.properties
+}
+
+```
+
+##  {#session}
+
+##  {#session}
+
 ## spring redis session {#session}
 
 ```
