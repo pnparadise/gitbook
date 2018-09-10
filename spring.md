@@ -1,7 +1,7 @@
 ## springboot build.gradle with profile {#session}
 
 ```
-$ bootRun -Dspring.profile.active=dev
+$ bootRun -Dspring.profiles.active=dev
 
 
 //build.gradle
