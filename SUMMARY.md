@@ -16,4 +16,5 @@
 
 * [linux](interview/linux.md)
 * [aliyun](interview/aliyun.md)
+* [simple algorithm](interview/simple-algorithm.md)
 
