@@ -1,6 +1,8 @@
-## springboot build.gradle with profile {#session}
+# spring
 
-```
+## springboot build.gradle with profile <a id="session"></a>
+
+```text
 $ bootRun -Dspring.profiles.active=dev
 
 
@@ -10,15 +12,13 @@ bootRun {
 }
 ```
 
-##  {#session}
+## spring redis session <a id="session"></a>
 
-## spring redis session {#session}
-
-```
+```text
 cookie 默认名称 SESSION 自定义
 ```
 
-```
+```text
 @Bean
 public <S extends ExpiringSession> SessionRepositoryFilter<? extends ExpiringSession> springSessionRepositoryFilter(SessionRepository<S> sessionRepository, ServletContext servletContext) {
     SessionRepositoryFilter<S> sessionRepositoryFilter = new SessionRepositoryFilter<S>(sessionRepository);
@@ -36,7 +36,7 @@ public <S extends ExpiringSession> SessionRepositoryFilter<? extends ExpiringSes
 
 > 修复@DateTimeFormat注解失效问题
 
-```
+```text
     @Bean
     public ConfigurableWebBindingInitializer getConfigurableWebBindingInitializer() {
         ConfigurableWebBindingInitializer initializer = new ConfigurableWebBindingInitializer();
@@ -58,11 +58,9 @@ public <S extends ExpiringSession> SessionRepositoryFilter<? extends ExpiringSes
     }
 ```
 
-### 
-
 ### spring global string to enum converter factory  自动转化枚举类型作为参数
 
-```
+```text
 public class StringToEnumConverterFactory implements ConverterFactory<String, Enum> {
 
     @Override
@@ -85,9 +83,7 @@ public class StringToEnumConverterFactory implements ConverterFactory<String, En
 }
 ```
 
-```
+```text
  conversionService.addConverterFactory(new StringToEnumConverterFactory());
 ```
-
-
 

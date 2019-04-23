@@ -1,33 +1,35 @@
-### add id\_rsa
+# git
+
+## add id\_rsa
 
 > mv id\_rsa ~/.ssh  
 > eval $\(ssh-agent -s\)  
 > chmod 700 id\_rsa  
 > ssh-add id\_rsa
 
-### git 强制更新
+## git 强制更新
 
-```
+```text
 $ git fetch --all
 $ git reset --hard origin/master
 ```
 
-### docker git clone
+## docker git clone
 
-```
+```text
 $ docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git alpine/git clone git@github.com:pnparadise/gitbook.git
 ```
 
-### docker gitbook cmd
+## docker gitbook cmd
 
-```
+```text
 $ docker run --rm -v "$PWD:/gitbook" billryan/gitbook gitbook install
 $ docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook build
 ```
 
 > [https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
-### git base
+## git base
 
 > git config --global user.email "your\_email@example.com"  
 > git init  
@@ -36,11 +38,7 @@ $ docker run --rm -v "$PWD":/gitbook billryan/gitbook gitbook build
 > git commit -m "First commit"  
 > git push -u origin master
 
-#### 
-
-### git 命令提交 推送
+## git 命令提交 推送
 
 > [http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/](http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/)
-
-
 

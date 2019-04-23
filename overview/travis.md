@@ -1,12 +1,12 @@
-### travis github project hooks 自动部署
+# travis
 
-> 要求ruby 环境 gitbook示例  建议直接使用c9 ruby镜像
+> 要求ruby 环境 gitbook示例 建议直接使用c9 ruby镜像
 >
 > 登陆travis-cli.org 激活github项目\(不支持gitee 必须使用webhook 参考\)
 >
 > 上传并加密部署私钥到travis 得到encrypted\_key 向量参数
 
-```
+```text
 $ gem install travis
 $ travis login --pro
 $ travis encrypt-file id_rsa -r pnparadise/gitbook
@@ -14,7 +14,7 @@ $ travis encrypt-file id_rsa -r pnparadise/gitbook
 
 > 项目根目录配置.travis.yml
 
-```
+```text
 sudo: required
 language: node_js
 
@@ -57,13 +57,13 @@ after_success:
 >
 > 第二步 建立空仓库 用于接收built代码 [https://gist.github.com/noelboss/3fe13927025b89757f8fb12e9066f2fa](https://gist.github.com/noelboss/3fe13927025b89757f8fb12e9066f2fa)
 
-```
+```text
 git init --bare ~/gitbook.git
 ```
 
 > 新建 hooks/post-receive 脚本 chmod u+x
 
-```
+```text
 #!/bin/sh
 #
 # An example hook script to prepare a packed repository for use over
@@ -87,7 +87,7 @@ done
 
 > 附赠 docker nginx 配置
 
-```
+```text
 nginx vhost.conf
 
 server {
@@ -110,13 +110,7 @@ $ docker run -d --name nginx -v /conf/nginx/nginx.conf:/etc/nginx/nginx.conf \
     --restart always -p 80:80 -p 443:443 nginx
 ```
 
-> 总结思路:  gitbook客户端编辑完 提交到github 触发travis 自动部署 travis使用docker gitbook 构建gitbook网站 新建并得到built分支 push到目标服务器的仓库中 目标git仓库收到push后执行post-receive 脚本 checkout 最新built网站文件 重启nginx 服务 部署完成
-
-
-
+> 总结思路: gitbook客户端编辑完 提交到github 触发travis 自动部署 travis使用docker gitbook 构建gitbook网站 新建并得到built分支 push到目标服务器的仓库中 目标git仓库收到push后执行post-receive 脚本 checkout 最新built网站文件 重启nginx 服务 部署完成
+>
 > any question mail to : 609888703@qq.com
-
-
-
-
 
