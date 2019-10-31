@@ -1,8 +1,5 @@
 [`排期`](https://docs.wps.cn/view/l/s4ec8cx/) [`issues`](http://zentao.lliao.net) [`gitlab`](http://gitlab.lliao.net) [`wiki`](http://eolinker.lliao.net/#/home/project/inside/api/list?groupID=-1&projectName=BCB%E6%B8%B8%E6%88%8F%E7%94%9F%E6%80%81%E5%B9%B3%E5%8F%B0&projectID=148)  [`release`](http://192.168.4.187:9963)
 
-| local-dev  | ![](http://static_ecosystem.lliao.net/file/images/local.png)| local-test  | ![](http://test.static_ecosystem.lliao.net/file/images/local.png) |  
-| ------- | ------- | --- |  --- | 
-| online-dev  | ![](http://static_ecosystem.lliao.net/file/images/dev.png) | online-test | ![](http://test.static_ecosystem.lliao.net/file/images/test.png) | 
 
 
 > [金山文档] [BCB项目管理.xlsx](https://kdocs.cn/l/s35lrNKU6)
