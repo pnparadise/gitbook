@@ -1,7 +1,5 @@
 [`排期`](https://docs.wps.cn/view/l/s4ec8cx/) [`issues`](http://zentao.lliao.net) [`gitlab`](http://gitlab.lliao.net) [`wiki`](http://eolinker.lliao.net/#/home/project/inside/api/list?groupID=-1&projectName=BCB%E6%B8%B8%E6%88%8F%E7%94%9F%E6%80%81%E5%B9%B3%E5%8F%B0&projectID=148)  [`release`](http://192.168.4.187:9963)
 
-
-
 > [金山文档] [BCB项目管理.xlsx](https://kdocs.cn/l/s35lrNKU6)
 >https://org.modao.cc/app/740c3f33d0b56b8edd880837964fb2fab72ecf7a   运营商前台V0.6原型        
 >https://org.modao.cc/app/3969392cc9d57a9deb91cb7c2b3d84a364485d24     PC官网原型
