@@ -48,10 +48,10 @@ https://org.modao.cc/app/31bae703b6bb40d7eff32c5e29eabafb2bc9f96f
 BCB测试环境API接口地址：
 
 > 
-> http://test.bcbstore.lliao.net
-> http://test.bcb-storeadmin.lliao.net
-> http://test.bcb.lliao.net
-> http://test.bcb-saasadmin.lliao.net
+> http://test.bcbstore.lliao.net \
+> http://test.bcb-storeadmin.lliao.net \
+> http://test.bcb.lliao.net \
+> http://test.bcb-saasadmin.lliao.net \
 > http://test.bcb-centeruser.lliao.net  用户中心
 
 
