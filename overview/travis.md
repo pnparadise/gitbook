@@ -112,5 +112,5 @@ $ docker run -d --name nginx -v /conf/nginx/nginx.conf:/etc/nginx/nginx.conf \
 
 > 总结思路: gitbook客户端编辑完 提交到github 触发travis 自动部署 travis使用docker gitbook 构建gitbook网站 新建并得到built分支 push到目标服务器的仓库中 目标git仓库收到push后执行post-receive 脚本 checkout 最新built网站文件 重启nginx 服务 部署完成
 >
-> any question mail to : 609888703@qq.com
+
 
