@@ -52,6 +52,11 @@ http://test.bcb.lliao.net \
 http://test.bcb-saasadmin.lliao.net \
 http://test.bcb-centeruser.lliao.net  用户中心
 
+后台登录地址
+>http://dev-single.lliao.net/sign-in/ \
+http://test-single.lliao.net/sign-in/ \
+http://single.99ga.me/sign-in/
+
 
 
 
