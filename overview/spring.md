@@ -87,3 +87,30 @@ public class StringToEnumConverterFactory implements ConverterFactory<String, En
  conversionService.addConverterFactory(new StringToEnumConverterFactory());
 ```
 
+
+### 无需注入静态方法获取httpServletRequest & applicationContext
+```java
+public class ContextHolder {
+
+    public static HttpServletRequest getRequest() {
+        RequestAttributes requestAttributes = RequestContextHolder.getRequestAttributes();
+        if (requestAttributes instanceof ServletRequestAttributes) {
+            return ((ServletRequestAttributes) requestAttributes).getRequest();
+        }
+        log.debug("Not called in the context of an HTTP request");
+        return null;
+    }
+
+    public static ApplicationContext getContext() {
+        HttpServletRequest request = getRequest();
+        if(request != null) {
+            return WebApplicationContextUtils.getWebApplicationContext(request.getServletContext());
+        }
+        log.debug("Not called in the context of an HTTP request");
+        return null;
+    }
+
+
+}
+```
+
