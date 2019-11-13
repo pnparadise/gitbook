@@ -7,7 +7,7 @@
 
  404.html方式存在的问题 会响应404错误码 虽不影响使用，但会导致seo无法收录 \
  经研究还是有 `serverless` 改进方案：
- >自有域名 + cloudflare worker 将404页面错误码改为200返回 \
+ >自有域名cname + cloudflare worker 将404页面错误码改为200返回 \
  也就是和第三种方式结合使用
  
   worker mathes 填写自有域名如: www.xxx.com/*
