@@ -89,13 +89,6 @@ $ docker run --name redis -d --net nat --ip 172.168.0.79 -v /data/redis:/data re
 --requirepass 123456
 ```
 
-## docker shadowsocksr
-
-```text
-$ docker run -d -p 443:51348 --restart=always -e PASSWORD=breakwall \
-    -e METHOD=aes-256-cfb -e PROTOCOL=auth_sha1_v4 -e OBFS=tls1.2_ticket_auth \
-    --name shadowsocksr breakwa11/shadowsocksr
-```
 
 ## docker redis client link
 
