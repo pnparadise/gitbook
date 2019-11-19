@@ -90,3 +90,7 @@ module.exports = {
 ```
 
 
+## todo 
+接入通过githubapi实现自动化  授权平台化
+
+
