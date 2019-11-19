@@ -20,6 +20,5 @@
 ## Tools
 
 * [easy search](https://so.ggga.ga)
-* [google search](https://hk.ggga.ga)
 * [thanks gabon](https://ggga.ga)
 * [subscribe v2 address](https://api.ggga.ga)
