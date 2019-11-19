@@ -17,8 +17,18 @@
 
 考虑到数据安全 github授权api拒绝cros请求。若需要在线文档编辑功能，授权服务器搭建必不可少  
 
-基本配置
-github.config.js
+## 快速部署
+
+>新建一个公开的markdown仓库  用于存放markdown文件 \
+新建一个私人的markdown仓库 用于存放markdown文件 管理可见【可选】
+
+github账号设置
+>Settings -> Developer settings \
+> 新建一个  GitHub Apps 用于普通用户授权 install 公开仓库  权限包括可读、可提交issue comment \
+> 新建一个  OAuth Apps  用于管理员授权 权限包括读写所有仓库 repo \
+> 新建一个 Personal access tokens  用于无登陆用户 权限只读 不用勾选任何选项 此token将公开 切勿打开多余权限
+
+项目构建配置 github.config.js
 ```javascript
 module.exports = {
     owner: "pnparadise", //github账号
