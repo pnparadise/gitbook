@@ -39,7 +39,7 @@ module.exports = {
 	curl_setopt($ch, CURLOPT_URL, 'https://github.com/login/oauth/access_token');
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
         //管理员写入需要用到一个oauth应用
-	if(!empty($_GET['client_id']) && $_GET['client_id'] == ''<github oauth client_id >'){
+	if(!empty($_GET['client_id']) && $_GET['client_id'] == '<github oauth client_id >'){
         	$post = [
     			'client_id' =>  '<github oauth client_id >',
     			'client_secret' => '<github oauth client_secret>',
