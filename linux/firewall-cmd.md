@@ -15,3 +15,9 @@ firewall-cmd --zone=public --permanent --list-ports
 ```console
 firewall-cmd --reload
 ```
+
+### centos7 默认安装 无法更换ssh 22端口 解决
+```console
+yum install -y policycoreutils-python \
+semanage port -a -t ssh_port_t -p tcp 23
+```
