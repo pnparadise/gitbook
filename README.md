@@ -3,7 +3,8 @@
 > 
 
 <p align="center">
-<a href="#"><img alt="JDK" src="https://img.shields.io/badge/node-6-yellow.svg?style=flat-square"/></a>
+<a href="#"><img alt="node" src="https://img.shields.io/badge/nodejs-6.0-yellow.svg?style=flat-square"/></a>
+  <a href="#"><img alt="vuejs" src="https://img.shields.io/badge/vuejs-2.0-yellow.svg?style=flat-square"/></a>
 <a href="https://travis-ci.org/pnparadise/markdown-editor"><img alt="Travis CI" src="https://travis-ci.com/pnparadise/markdown-editor.svg?token=GvFziCpGdzmjVWu9pS6a&branch=master"/></a>
 </p>
 
