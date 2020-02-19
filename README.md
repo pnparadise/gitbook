@@ -83,7 +83,12 @@ module.exports = {
 	curl_close($ch);
 
 	if(!empty($_GET["redirect_uri"])){
-		$url = $_GET["redirect_uri"] . "?" . $result;
+		if(strpos($_GET["redirect_uri"], '?') !== false){
+			$url = $_GET["redirect_uri"] . "&" . $result;
+		}
+		else{
+			$url = $_GET["redirect_uri"] . "?" . $result;
+		}
 	}
 	
 	header("Location: $url");
