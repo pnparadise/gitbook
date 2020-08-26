@@ -6,7 +6,7 @@ COMMOND_HOME=/etc/bin/redis-cli
 pattern=$1
 masterNodeAdress=192.168.0.168
 masterNodePort=7000
-password=passwD9923
+password=
 echo "batch del keys ${pattern}" 
 #batch del redis cluster
 #1. fetch master nodes hostandport
