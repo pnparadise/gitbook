@@ -5,7 +5,7 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4><img style="height:200px;width:170px;" src="https://img.gejiba.com/images/5300be78844751339b80b2a1b835b6f7.jpg"/></td>
+            <td rowspan=5><img style="height:200px;width:170px;" src="https://img.gejiba.com/images/5300be78844751339b80b2a1b835b6f7.jpg"/></td>
             <td >姓名</td>
             <td>Linda</td>
             <td >别名</td>
@@ -28,6 +28,12 @@
             <td>未婚</td>
             <td >学    历</td>
             <td>北京大学在读</td>
+        </tr>
+         <tr>
+          	<td >民    族</td>
+            <td>汉</td>
+            <td >出生地区</td>
+            <td>中国北京</td>
         </tr>
     </tbody>
 </table>
