@@ -1,14 +1,15 @@
 # travis
 
-> 要求ruby 环境 gitbook示例 建议直接使用c9 ruby镜像
->
-> 登陆travis-cli.org 激活github项目\(不支持gitee 必须使用webhook 参考\)
->
+> 要求ruby 环境 gitbook示例 建议直接使用docker ruby-cli \
+>  docker run -it --rm --name ruby ruby bash
+
+> 登陆travis-cli.com 激活github项目 \
 > 上传并加密部署私钥到travis 得到encrypted\_key 向量参数
 
 ```text
+
 $ gem install travis
-$ travis login --pro
+$ travis login --com --github-token XXX
 $ travis encrypt-file id_rsa -r pnparadise/gitbook
 ```
 
