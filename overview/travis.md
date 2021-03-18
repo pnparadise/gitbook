@@ -10,7 +10,7 @@
 
 $ gem install travis
 $ travis login --com --github-token XXX
-$ travis encrypt-file id_rsa -r pnparadise/gitbook
+$ travis encrypt-file id_rsa -r pnparadise/gitbook --com
 ```
 
 > 项目根目录配置.travis.yml
